@@ -32,12 +32,32 @@
   Firewally môžu byť hardvérové (zariadenie) alebo softvérové (program), a často sú súčasťou domácich smerovačov alebo firemných sietí.
 </p>
 
-<h3>Funkcie firewallu</h3>
-<ul>
-  <li>Blokuje podozrivú sieťovú prevádzku</li>
-  <li>Umožňuje definovanie bezpečnostných pravidiel</li>
-  <li>Zaznamenáva pokusy o prienik</li>
-</ul>
+<h2>Typy firewallov</h2>
+
+<table>
+  <caption>Základné typy firewallov</caption>
+  <tr>
+    <th>Typ</th>
+    <th>Popis</th>
+    <th>Príklady využitia</th>
+  </tr>
+  <tr>
+    <td>Packet filtering</td>
+    <td>Kontroluje pakety na základe IP adresy, portu a protokolu</td>
+    <td>Domáce routery, jednoduché siete</td>
+  </tr>
+  <tr>
+    <td>Stateful inspection</td>
+    <td>Sleduje stav spojení a pamätá si aktívne spojenia</td>
+    <td>Firemné brány, podnikové siete</td>
+  </tr>
+  <tr>
+    <td>Application-level</td>
+    <td>Analyzuje obsah špecifických aplikácií (napr. HTTP, FTP)</td>
+    <td>Web servery, bankové systémy</td>
+  </tr>
+</table>
+
 
 <img src="obrazky/obfirewall.png" width="100"></br>
 
@@ -48,6 +68,14 @@
   <li><strong>Packet-filtering</strong> – kontroluje základné údaje v dátových balíkoch</li>
   <li><strong>Stateful</strong> – sleduje stav spojení</li>
   <li><strong>Application-level</strong> – detailne kontroluje konkrétne aplikácie</li>
+</ul>
+
+  <h2>Výhody použitia firewallu</h2>
+<ul>
+  <li>Chráni zariadenia pred neoprávneným prístupom</li>
+  <li>Zabraňuje úniku citlivých dát</li>
+  <li>Filtrovanie podľa portov, IP adries alebo aplikácií</li>
+  <li>Monitorovanie prichádzajúcej a odchádzajúcej prevádzky</li>
 </ul>
 
 <h3>Zdroje</h3>
